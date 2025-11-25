@@ -42,6 +42,13 @@ queries.
 
 ## Installation
 
+### 0. Quick Start
+```
+py -3.11 -m venv venv
+.\venv\Scripts\activate
+uvicorn edurag_api:app --reload
+```
+
 ### 1. Clone the Repository
 
 ``` bash
@@ -58,7 +65,7 @@ python -m venv venv
 Activate it (PowerShell):
 
 ``` powershell
-.env\Scriptsctivate
+.\venv\Scripts\activate
 ```
 
 ### 3. Install Dependencies
