@@ -57,7 +57,7 @@ def transcribe_audio(audio_path: str) -> List[Dict[str, Any]]:
     Returns list of segments: [{'start': float, 'end': float, 'text': str}, ...]
     """
     print("Transcribing:", audio_path)
-    result = whisper_model.transcribe(audio_path, verbose=False)
+    result = whisper_model.transcribe(audio_path, verbose=False, language="en") #force English
     # Whisper returns 'segments' with 'start','end','text'
     segments = []
     for s in result.get("segments", []):
@@ -435,4 +435,18 @@ def status():
     ready = STATE["index"] is not None
     return {"ready": ready, "n_segments": len(STATE["segments"]) if STATE["segments"] else 0}
 
+@app.get("/transcript/")
+def get_transcript():
+    if not STATE["segments"]:
+        raise HTTPException(status_code=404, detail="No transcript available. Upload a video first.")
+    
+    transcript = []
+    for seg in STATE["segments"]:
+        transcript.append({
+            "start": seg.start,
+            "end": seg.end,
+            "text": seg.text
+        })
+    
+    return {"transcript": transcript, "count": len(transcript)}
 

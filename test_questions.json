@@ -1,0 +1,77 @@
+[
+    {
+      "question": "What are the three types of machine learning?",
+      "ground_truth_time": 0.0,
+      "category": "definition"
+    },
+    {
+      "question": "What is supervised learning?",
+      "ground_truth_time": 28.0,
+      "category": "definition"
+    },
+    {
+      "question": "What is regression?",
+      "ground_truth_time": 66.0,
+      "category": "definition"
+    },
+    {
+      "question": "How does supervised learning work?",
+      "ground_truth_time": 102.0,
+      "category": "explanation"
+    },
+    {
+      "question": "Why is reinforcement learning difficult?",
+      "ground_truth_time": 208.0,
+      "category": "explanation"
+    },
+    {
+      "question": "What is the goal of unsupervised learning?",
+      "ground_truth_time": 288.0,
+      "category": "explanation"
+    },
+    {
+      "question": "What is a model class?",
+      "ground_truth_time": 112.0,
+      "category": "concept"
+    },
+    {
+      "question": "What are sparse codes?",
+      "ground_truth_time": 416.0,
+      "category": "concept"
+    },
+    {
+      "question": "What is a manifold in machine learning?",
+      "ground_truth_time": 343.0,
+      "category": "concept"
+    },
+    {
+      "question": "How do you measure discrepancy in supervised learning?",
+      "ground_truth_time": 147.0,
+      "category": "technique"
+    },
+    {
+      "question": "What is principal components analysis?",
+      "ground_truth_time": 380.0,
+      "category": "technique"
+    },
+    {
+      "question": "What is clustering?",
+      "ground_truth_time": 262.0,
+      "category": "technique"
+    },
+    {
+      "question": "What is the difference between regression and classification?",
+      "ground_truth_time": 66.0,
+      "category": "comparison"
+    },
+    {
+      "question": "What is reinforcement learning compared to supervised learning?",
+      "ground_truth_time": 38.0,
+      "category": "comparison"
+    },
+    {
+      "question": "How is clustering different from other unsupervised learning?",
+      "ground_truth_time": 432.0,
+      "category": "comparison"
+    }
+  ]
