@@ -53,7 +53,7 @@ uvicorn edurag_api:app --reload
 ### 1. Clone the Repository
 
 ``` bash
-git clone https://github.com/your-username/AI-Timestamp-Generator
+git clone https://github.com/AbnormalGhoul/AI-Timestamp-Generator
 cd AI-Timestamp-Generator
 ```
 
